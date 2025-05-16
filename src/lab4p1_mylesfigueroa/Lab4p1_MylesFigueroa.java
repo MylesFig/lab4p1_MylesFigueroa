@@ -104,9 +104,10 @@ public class Lab4p1_MylesFigueroa {
                         char letra = enviado.charAt(posicion);
                         codigo = codigo + letra; 
                         posicion++;
-                        System.out.println("El mensaje "+enviado+"es mas pesado que"+recibido);
+                        
 
                     }
+                    System.out.println("El mensaje "+enviado+"es mas pesado que"+recibido);
                 }
 
             }
