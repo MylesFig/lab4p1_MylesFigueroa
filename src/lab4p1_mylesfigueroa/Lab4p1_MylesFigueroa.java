@@ -34,6 +34,7 @@ public class Lab4p1_MylesFigueroa {
                     oricontains();
                     break;
                 case 4:
+                    salir();
                     break;
             }
             System.out.println("1. Cifrado de vocales");
@@ -49,7 +50,40 @@ public class Lab4p1_MylesFigueroa {
     public static void cifradomen (){
         System.out.println("*Cifrado de cadenas*");
         System.out.println("Ingrese la palabra que desea codificar: ");
-        string palabra=leer.next();
+        String palabra=leer.next();
+        
+        for (int i = 0; i < palabra.length(); i++) {
+            char letra = palabra.charAt(i);
+            
+            if(letra=='a')
+                System.out.print(letra+"4");
+            else
+                if(letra=='e')
+                    System.out.print(letra+"3");
+                else
+                    if(letra=='i')
+                        System.out.print(letra+"1");
+                    else
+                        if(letra=='o')
+                            System.out.print(letra+"0");
+                        
+                        else
+                            if(letra=='s')
+                                System.out.print(letra+"5");
+                            else
+                                if(letra=='h')
+                                    System.out.print(letra+"#");
+                                else
+                                    if(letra=='t')
+                                        System.out.print(letra+"+");
+                                    else
+                                        System.out.print("Codigo cifrado: "+letra+"");
+                                            
+            }
+            System.out.println();
+            
+            
+                
     }
     public static void verificacionmen(){
         System.out.println("*Verificador de mensajes*");
@@ -57,5 +91,9 @@ public class Lab4p1_MylesFigueroa {
     }
     public static void oricontains(){
         System.out.println("");
+    }
+    public static void salir(){
+        System.out.println(" Fin del programa");
+        
     }
 }
